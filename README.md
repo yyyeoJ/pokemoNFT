@@ -1,11 +1,11 @@
-Történet
+# Történet
 Pokémonok szabadultak be a világunkba! Az NFT kereskedők természetesen gyorsan meg is ragadták az alkalmat, és nekiláttak, hogy elkészítsék a kereskedelem legkézenfekvőbb módját, egy weboldalt. Mindegyikük megkereste egy-egy ismerősét a következő módon:
 
 "Figyelj, van egy biznisz ötletem, szerintem simán leprogramozod két hét alatt. Jaaa hát büdzsém az nincs rá... nem, tervem sincs nagyon, de már elképzeltem, hogy milyenek lennének a színei, a többit majd megoldod. Micsoda, ennyibe kerülne?? Dehát a GPT már jobban programoz, bárki meg tudja csinálni ingyen... Mi, hogy én miért nem? Hát te vagy a programozó. Nem, nem fogok fizetni, de meghívlak egy kólára."
 
 A te egyik ismerősöd is megkeresett, lezajlott egy hasonló beszélgetés, és a végén megegyeztetek, hogy a te feladatod lesz elkészíteni a weboldalt, ő pedig lesz az alapító
 
-Alap funkciók
+# Alap funkciók
 Egy PHP-ban írt szerveroldali alkalmazás készítése a feladatod, amelyben felhasználók Pokémon kártyákkal tudnak kereskedni. Ezen két adatstruktúra (kártyák, felhasználók) lehetséges tárolási formájáról lentebb, a segítség részben olvashatsz, de természetesen másképp is felépítheted az adataidat.
 
 Az adatok közé előre fel kell venni Pokémon kártyákat.
@@ -13,35 +13,35 @@ A felhasználók közé fel kell venni egy admin felhasználót, akinek a belép
 Egy kártya csak egy felhasználóhoz tartozhat, de egy felhasználó több kártyát is birtokolhat.
 Feltöltöttünk egy kiinduló csomagot, hogy segítsük a munkát (kis HTML meg CSS, hogy könnyebb legyen elképzelni). Valamiért a kiinduló csomaghoz nem fértek hozzá. Teamsen a fájlok közt fent van (illetve kommentben a beadandó threadjében).
 
-Főoldal / Listaoldal
+## Főoldal / Listaoldal
 A lista oldalon, avagy a főoldalon statikus szöveggel jelenjen meg egy cím és egy rövid ismertetés.
 A főoldal elérhető azonosítatlan felhasználók számára, akik szabadon tudják böngészni az itt megjelenő tartalmakat.
 A lista oldalon legyenek kilistázva a rendszerben létező Pokémon kártyák.
 A Pokémon kártyákhoz tartozzon egy link (ez akár egy képen is rajta lehet), ami az adott Pokémon kártya részletező oldalára vezet.
 Ha a felhasználó be van jelentkezve, legyen elérhető egy vásárlás gomb azokon a kártyákon, amelyek az adminhoz tartoznak. A felhasználó megvehet egy kártyát, ha van elég pénze, és ha még nem ért el egy kártyalimitet (pl. 5 kártya).
 Ha a felhasználó be van jelentkezve, akkor egy linken keresztül legyen elérhető a "Felhasználó részletek" oldal.
-Kártya részletek
+## Kártya részletek
 A Pokémon kártya részletek oldalon jelenjen meg az adott kártyán szereplő szörny neve, a hozzá tartozó kép, a szörny tulajdonságai, a kártya leírása.
 Az oldalon egy jól látható mező (pl. a kép háttere, oldal háttere) színe változzon a kártyán szereplő szörny eleme szerint. Pl.: Fire esetén piros, Lightning esetén sárga, stb.
 Innen is lehessen elérni a főoldalt, esetlegesen a többi menüelemet.
-Felhasználó részletek
+## Felhasználó részletek
 Az oldalon listázódnak a felhasználó adatai és saját kártyái.
 A felhasználó eladhatja bármely kártyáját az ár 90%-áért az adminnak (visszavásárlás). Az eladott kártya visszakerül az admin felhasználóhoz.
-Hitelesítési oldalak
+## Hitelesítési oldalak
 A főoldalról legyen lehetőség elérni a bejelentkező és regisztrációs oldalt.
 Regisztráció során meg kell adni felhasználónevet, az e-mail címet és a jelszót kétszer. Mindegyik kötelező, a felhasználónév legyen egyedi, az e-mail cím formátuma legyen helyes, a jelszavak pedig egyezzenek. Sikeres regisztráció esetén a felhasználó kapjon x mennyiségű pénzt (ezt az összeget ajánlott beleégetned a kódba, mert úgyis azt szeretnénk, hogy minden user ugyanannyi pénzt kapjon).
 Regisztrációs hiba esetén jelenjenek meg hibaüzenetek! Az űrlap legyen állapottartó! Sikeres regisztráció után a felhasználó kerüljön bejelentkezve a főoldalra.
 A bejelentkezés során a felhasználónévvel és jelszóval tudjuk azonosítani magunkat.
 A bejelentkezés során előforduló hibákat az űrlap fölött jelezd! Sikeres belépés után kerüljünk a főoldalra!
-Admin funkciók
+## Admin funkciók
 Legyen egy speciális felhasználó, az admin (felhasználónév: admin, jelszó: admin).
 Az admin felhasználó tudjon új kártyát létrehozni.
 Az admin felhasználónak akárhány kártyája lehet.
 Az admin felhasználó nem vásárolhat kártyát.
-Extra funkciók
+## Extra funkciók
 Ld. a pontozást!
 
-További elvárások
+## További elvárások
 Fontos az igényes megjelenés. Ez nem feltétlenül jelenti egy agyon csicsázott oldal elkészítését, de azt igen, hogy 1024x768 felbontásban az oldal jól jelenjen meg. Ehhez lehet minimalista designt is alkalmazni, lehet különböző háttérképekkel és grafikus elemekkel felturbózott saját CSS-t készíteni, de lehet bármilyen CSS keretrendszer segítségét is igénybe venni.
 A bevitt adatokat szerveroldalon kell ellenőrizni, a kérés végső feldolgozásakor. Az űrlapokelemeinek attribútumai közé vegyük fel a novalidate attribútumot is, hogy kikapcsoljuk a böngésző validálását!
 Az elkészült feladatot tömörítve, az összes szükséges állománnyal, illetve a program gyökérmappájában elhelyezett README.md fájllal együtt legkésőbb a határidőig kell feltölteni a Canvas rendszerbe.
@@ -86,57 +86,45 @@ Admin jogosultság
 Ezen az oldalon minden eddigi Pokémon kártya fent van, innen lehet inspirációt meríteni: https://www.pokemon.com/us/pokemon-tcg/pokemon-cards/ (Linkek egy külső oldalra)
 Példa a kártyák tárolására. Nagyon erősen javasolt az órán mutatott Storage osztályt használni, nem pedig nulláról megírni! Ez a példa csak segítség, át kell alakítani, hogy azon osztállyal működjön!
 
-
-TODO:
-Kártya vásárlás (max 5)
-Kártya eladás
-
-<Jeges József>
-<F49S0K>
-
-Webprogramozás - számonkérés
-
-Kijelentem, hogy ez a megoldás a saját munkám. Nem másoltam vagy használtam harmadik féltől származó megoldásokat. Nem továbbítottam megoldást hallgatótársaimnak, és nem is tettem közzé. Nem használtam mesterséges intelligencia által generált kódot, kódrészletet. Az ELTE HKR 377/A. § értelmében, ha nem megengedett segédeszközt veszek igénybe, vagy más hallgatónak nem megengedett segítséget nyújtok, a tantárgyat nem teljesíthetem.
-
-ELTE Hallgatói Követelményrendszer, IK kari különös rész, 377/A. §: "Az a hallgató, aki olyan tanulmányi teljesítménymérés (vizsga, zárthelyi, beadandó feladat) során, amelynek keretében számítógépes program vagy programmodul elkészítése a feladat, az oktató által meghatározottakon kívül más segédeszközt vesz igénybe, illetve más hallgatónak meg nem engedett segítséget nyújt, tanulmányi szabálytalanságot követ el, ezért az adott félévben a tantárgyat nem teljesítheti és a tantárgy kreditjét nem szerezheti meg."
+# Pontozás
 
 ### Minimálisan teljesítendő (enélkül nem fogadjuk el, 6 pont)
-[X] `0.0 pont` Readme.md fájl: kitöltve, feltöltve
-[X] `0.0 pont` Főoldal: megjelenik
-[X] `1.0 pont` Főoldal: összes kártya listázása, pl. képekkel
-[X] `1.0 pont` Főoldal: a kártya nevére kattintva a megfelelő kártya részletek oldalra jutunk
-[X] `1.0 pont` Kártya részletek: Megjelenik a kártyán szereplő szörny neve, életereje, leírása és eleme
-[X] `0.5 pont` Kártya részletek: Megjelenik a kártyához tartozó kép
-[X] `0.5 pont` Kártya részletek: A kártyán szereplő szörny eleme szerint változik az oldalon egy vagy több elem színe vagy háttérszíne, pl.: Fire esetén piros, Lightning esetén sárga, stb.
-[X] `2.0 pont` Admin: Új kártya létrehozása: hibakezelés, sikeres mentés
+* [X] `0.0 pont` Readme.md fájl: kitöltve, feltöltve
+* [X] `0.0 pont` Főoldal: megjelenik
+* [X] `1.0 pont` Főoldal: összes kártya listázása, pl. képekkel
+* [X] `1.0 pont` Főoldal: a kártya nevére kattintva a megfelelő kártya részletek oldalra jutunk
+* [X] `1.0 pont` Kártya részletek: Megjelenik a kártyán szereplő szörny neve, életereje, leírása és eleme
+* [X] `0.5 pont` Kártya részletek: Megjelenik a kártyához tartozó kép
+* [X] `0.5 pont` Kártya részletek: A kártyán szereplő szörny eleme szerint változik az oldalon egy vagy több elem színe vagy háttérszíne, pl.: Fire esetén piros, Lightning esetén sárga, stb.
+* [X] `2.0 pont` Admin: Új kártya létrehozása: hibakezelés, sikeres mentés
 
 
 ### Az alap feladatok (14 pont)
-[X] `0.5 pont` Regisztrációs űrlap: Megfelelő elemeket tartalmazza
-[X] `0.5 pont` Regisztrációs űrlap: Hibás esetek kezelése, hibaüzenet, állapottartás
-[X] `0.5 pont` Regisztrációs űrlap: Sikeres regisztráció
-[X] `0.5 pont` Bejelentkezés: Hibás esetek kezelése
-[X] `0.5 pont` Bejelentkezés: Sikeres bejelentkezés
-[X] `0.5 pont` Kijelentkezés
-[X] `0.5 pont` Főoldal: Megjelenik a felhasználó neve és pénze
-[X] `0.5 pont` Főoldal: A felhasználónévre kattintva a felhasználó részletei oldalra jutunk
-[X] `1.0 pont` Főoldal: Lehessen a kártyákat típus szerint szűrni.
-[X] `0.5 pont` Felhasználó részletek: Megjelenik a felhasználó neve, e-mail címe, pénze
-[X] `0.5 pont` Felhasználó részletek: Megjelennek a felhasználóhoz tartozó kártyák
-[X] `2.0 pont` Felhasználó részletek: A felhasználó kártyái mellett megjelenik egy eladás gomb, amivel a felhasználó el tudja adni az adott kártyát, ekkor törlődik a kártyái közül az eladott lap és megkapja a kártya árának 90%-át. Az eladott lap visszakerül az ADMIN paklijába. (Azt hogy az eladás gombot hova helyezed és hogyan valósítod meg rád van bízva)
-[X] `0.5 pont` Admin: Be lehet jelentkezni az admin felhasználó adataival
-[X] `0.5 pont` Admin: Új kártya létrehozása csak Admin felhasználóval érhető el
-[X] `0.5 pont` Főoldal: Ha be van jelentkezve jelenjen meg egy vásárlás gomb minden kártya alatt
-[X] `1.5 pont` Főoldal (Vásárlás): Meg tudja venni a kártyát
-[X] `0.5 pont` Főoldal (Vásárlás): Csak annyit tud venni amennyi pénze van
-[X] `0.5 pont` Főoldal (Vásárlás): Legfeljebb 5 kártyája lehet
-[X] `1.0 pont` Igényes kialakítás
+* [X] `0.5 pont` Regisztrációs űrlap: Megfelelő elemeket tartalmazza
+* [X] `0.5 pont` Regisztrációs űrlap: Hibás esetek kezelése, hibaüzenet, állapottartás
+* [X] `0.5 pont` Regisztrációs űrlap: Sikeres regisztráció
+* [X] `0.5 pont` Bejelentkezés: Hibás esetek kezelése
+* [X] `0.5 pont` Bejelentkezés: Sikeres bejelentkezés
+* [X] `0.5 pont` Kijelentkezés
+* [X] `0.5 pont` Főoldal: Megjelenik a felhasználó neve és pénze
+* [X] `0.5 pont` Főoldal: A felhasználónévre kattintva a felhasználó részletei oldalra jutunk
+* [X] `1.0 pont` Főoldal: Lehessen a kártyákat típus szerint szűrni.
+* [X] `0.5 pont` Felhasználó részletek: Megjelenik a felhasználó neve, e-mail címe, pénze
+* [X] `0.5 pont` Felhasználó részletek: Megjelennek a felhasználóhoz tartozó kártyák
+* [X] `2.0 pont` Felhasználó részletek: A felhasználó kártyái mellett megjelenik egy eladás gomb, amivel a felhasználó el tudja adni az adott kártyát, ekkor törlődik a kártyái közül az eladott lap és megkapja a kártya árának 90%-át. Az eladott lap visszakerül az ADMIN paklijába. (Azt hogy az eladás gombot hova helyezed és hogyan valósítod meg rád van bízva)
+* [X] `0.5 pont` Admin: Be lehet jelentkezni az admin felhasználó adataival
+* [X] `0.5 pont` Admin: Új kártya létrehozása csak Admin felhasználóval érhető el
+* [X] `0.5 pont` Főoldal: Ha be van jelentkezve jelenjen meg egy vásárlás gomb minden kártya alatt
+* [X] `1.5 pont` Főoldal (Vásárlás): Meg tudja venni a kártyát
+* [X] `0.5 pont` Főoldal (Vásárlás): Csak annyit tud venni amennyi pénze van
+* [X] `0.5 pont` Főoldal (Vásárlás): Legfeljebb 5 kártyája lehet
+* [X] `1.0 pont` Igényes kialakítás
 
 ### Plusz feladatok (max plusz 5 pont)
-[ ] `0.5 pont` Admin: Kártya módosítása: admin felhasználóval elérhető, még el nem adott kártyák esetén
-[ ] `0.5 pont` Admin: Kártya módosítása: hibakezelés, állapottartás, sikeres mentés
-[ ] `1.0 pont` Főoldal: A főoldal egy gombra kattintva a nem admin felhasználók tudjanak venni egy véletlenszerű kártyát a pénzükből, egy random kártya ára lehet pl.: 50 coin.
-[ ] `2.0 pont` Főoldal: A főoldalon egyszerre csak 9 kártya jelenjen meg, alattuk lehessen navigálni az oldalakon (oldalszámokkal, nyilakkal). Mindig az aktuális oldalszámnak megfelelő kártyák jelenjenek meg, minden oldalon a következő 9 kártya. A megoldáshoz használj AJAX-ot/fetch-et.
-[ ] `1.0 pont` Csere 1. lépés: A főoldalon azoknál a kártyáknál, amely nem az adminnál és nálunk van jelenjen meg egy csere gomb, amire kattintva önhatalmúlag cserélhesse el ezen kártyára egy tetszőleges kártyáját a felhasználó. 
-[ ] `1.0 pont` Csere 2. lépés: A csere ne azonnali és önhatalmú legyen, hanem a másik fél kapjon róla értesítést, és fogadhassa vagy utasíthassa el.
-[ ] `1.0 pont` Csere 3. lépés: A cseréhez lehessen pénzt is hozzáadni bármely oldalra. Figyelj a negatív számokra!
+* [ ] `0.5 pont` Admin: Kártya módosítása: admin felhasználóval elérhető, még el nem adott kártyák esetén
+* [ ] `0.5 pont` Admin: Kártya módosítása: hibakezelés, állapottartás, sikeres mentés
+* [ ] `1.0 pont` Főoldal: A főoldal egy gombra kattintva a nem admin felhasználók tudjanak venni egy véletlenszerű kártyát a pénzükből, egy random kártya ára lehet pl.: 50 coin.
+* [ ] `2.0 pont` Főoldal: A főoldalon egyszerre csak 9 kártya jelenjen meg, alattuk lehessen navigálni az oldalakon (oldalszámokkal, nyilakkal). Mindig az aktuális oldalszámnak megfelelő kártyák jelenjenek meg, minden oldalon a következő 9 kártya. A megoldáshoz használj AJAX-ot/fetch-et.
+* [ ] `1.0 pont` Csere 1. lépés: A főoldalon azoknál a kártyáknál, amely nem az adminnál és nálunk van jelenjen meg egy csere gomb, amire kattintva önhatalmúlag cserélhesse el ezen kártyára egy tetszőleges kártyáját a felhasználó. 
+* [ ] `1.0 pont` Csere 2. lépés: A csere ne azonnali és önhatalmú legyen, hanem a másik fél kapjon róla értesítést, és fogadhassa vagy utasíthassa el.
+* [ ] `1.0 pont` Csere 3. lépés: A cseréhez lehessen pénzt is hozzáadni bármely oldalra. Figyelj a negatív számokra!
